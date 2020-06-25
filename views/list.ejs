@@ -8,8 +8,11 @@
 </head>
 
 <body>
-
-    <h1><%= kindOfDay %> List</h1>
+    <% if (kindOfDay === "Saturday" || kindOfDay === "Sunday"){ %>
+    <h1 style="color: rgb(238, 148, 13)"><%= kindOfDay %> ToDo List</h1>
+    <% }else{ %>
+    <h1 style="color: rgb(45, 106, 185)"><%= kindOfDay %> ToDo List</h1>
+    <% } %>
 </body>
 
 </html>
